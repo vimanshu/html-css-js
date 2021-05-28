@@ -14,8 +14,9 @@
 }
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 200px);
-  grid-template-rows: repeat(5, 200px);
+  grid-template: repeat(5, 200px) / 70fr 30fr;
+  /* in grid-template first comes the col / rows */
+
   gap: 10px;
   justify-content: center;
   align-content: center;
@@ -26,6 +27,8 @@
     "spotify proj2 night"
     "intro2 proj3 proj3"
     "intro2 email email";
+  width: 50%;
+  margin-left: 25%;
 }
 .map {
   background-color: tomato;
